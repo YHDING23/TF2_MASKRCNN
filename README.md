@@ -9,7 +9,7 @@ DL framework is:
 - Python >= 3.4 (e.g., 3.6)
 - CUDA >= 11.0, <= 11.4 (e.g., 11.4)
 
-Check the 
+Check the reference [Here](https://www.tensorflow.org/install/source#linux) and see if your CUDA version is compatible with your Tensorflow version.  
 
 ### 1 - Setup
 - Clone the repo, setup the virtual env
