@@ -7,7 +7,9 @@ Reference: [Mask R-CNN for Object Detection and Segmentation](https://github.com
 DL framework is:
 - Tensorflow 2.0 (e.g., 2.4.0)
 - Python >= 3.4 (e.g., 3.6)
-- CUDA >= 11.0 (e.g., 11.2)
+- CUDA >= 11.0, <= 11.4 (e.g., 11.4)
+
+Check the 
 
 ### 1 - Setup
 - Clone the repo, setup the virtual env
@@ -38,7 +40,7 @@ Reference at https://github.com/matterport/Mask_RCNN/releases
 
 Example: I pick up the original COCO pretrained model: `mask_rcnn_coco.h5`.
 ```angular2html
-# from Mask_RCNN/
+# from TF2_MASKRCNN/
 mkdir pretrain
 cd pretrain
 wget https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5
@@ -46,5 +48,6 @@ wget https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_co
 
 The training flags are as followings:
 ```angular2html
+# from TF2_MASKRCNN
 python samples/coco/coco.py train --dataset=/nfs_1/data/coco --model=pretrain/mask_rcnn_coco.h5
 ```
