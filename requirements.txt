@@ -7,5 +7,5 @@ scikit-image==0.16.2
 tensorflow==2.4.0
 opencv-python
 h5py
-imgaug
+imgaug==0.2.6
 IPython[all]
